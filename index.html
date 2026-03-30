@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Defenders - Arcade Shooting Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui-container">
+        <div id="menu" class="menu">
+            <h1>COSMIC DEFENDERS</h1>
+            <p>Wave-Based Arcade Shooter</p>
+            <div class="menu-buttons">
+                <button id="startBtn" class="menu-btn">START GAME</button>
+                <button id="challengeBtn" class="menu-btn">CHALLENGE MODE</button>
+                <button id="bossRushBtn" class="menu-btn">BOSS RUSH</button>
+            </div>
+        </div>
+        <div id="hud" class="hud">
+            <div id="score" class="hud-item">SCORE: 0</div>
+            <div id="wave" class="hud-item">WAVE: 1</div>
+            <div id="health" class="hud-item">HEALTH: 100</div>
+            <div id="ammo" class="hud-item">AMMO: INF</div>
+        </div>
+        <div id="gameOver" class="game-over hidden">
+            <h2>GAME OVER</h2>
+            <p id="finalScore">Final Score: 0</p>
+            <p id="waveReached">Wave Reached: 1</p>
+            <button id="retryBtn" class="menu-btn">PLAY AGAIN</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
